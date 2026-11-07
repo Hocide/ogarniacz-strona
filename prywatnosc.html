@@ -10,7 +10,7 @@
 <main>
 <nav><a href="index.html">Ogarniacz</a></nav>
 <h1>Polityka prywatności</h1>
-<p class="lead">Ostatnia zmiana: 6 listopada 2026.</p>
+<p class="lead">Ostatnia zmiana: 7 listopada 2026.</p>
 
 <h2>Kto za to odpowiada</h2>
 <p>Patryk Kruk, kontakt: <a href="mailto:totenkruk@gmail.com">totenkruk@gmail.com</a>.</p>
@@ -25,14 +25,15 @@
 <ul>
 <li><strong>Do czego jest dostęp:</strong> tylko do odczytu listy Twoich kalendarzy i ich wydarzeń (zakres <code>calendar.readonly</code>). Aplikacja niczego w kalendarzu nie tworzy, nie zmienia i nie usuwa.</li>
 <li><strong>Po co:</strong> żeby pokazać wydarzenia z kalendarzy, które wybierzesz, w planie dnia, tygodnia i miesiąca. Do niczego innego.</li>
-<li><strong>Gdzie trafiają:</strong> urządzenie pobiera wydarzenia prosto od Google i trzyma je u siebie. Wydarzenia nie trafiają na serwer Ogarniacza. Token dostępu leży w pęku kluczy urządzenia (Keychain).</li>
-<li><strong>Co się synchronizuje:</strong> tylko lista kalendarzy, które wybierzesz, żeby wszystkie Twoje urządzenia pokazywały to samo. Jest zaszyfrowana na urządzeniu, jak reszta danych.</li>
+<li><strong>Gdzie trafiają:</strong> urządzenie pobiera wydarzenia prosto od Google i trzyma je u siebie. Wydarzenia nie trafiają na serwer Ogarniacza.</li>
+<li><strong>Token dostępu:</strong> kalendarz łączysz raz i działa na wszystkich urządzeniach Twojego konta. Dlatego token jest szyfrowany na urządzeniu kluczem, który mają tylko Twoje urządzenia (w pęku kluczy, Keychain). Tylko w tej zaszyfrowanej postaci jest zapisywany w danych aplikacji i przechodzi przez serwer Ogarniacza. Serwer nie ma klucza i nie może go odczytać.</li>
+<li><strong>Co się synchronizuje:</strong> zaszyfrowany token i lista kalendarzy, które wybierzesz, żeby wszystkie Twoje urządzenia pokazywały to samo. Lista też jest zaszyfrowana na urządzeniu, jak reszta danych.</li>
 <li><strong>Komu to udostępniamy:</strong> nikomu. Dane z Google nie są sprzedawane, nie służą do reklam ani do trenowania modeli sztucznej inteligencji i nikt ich nie czyta.</li>
 </ul>
 <p lang="en">Ogarniacz's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
 
 <h2>Jak odebrać dostęp i usunąć dane</h2>
-<p>Dostęp do kalendarza odłączysz w ustawieniach aplikacji albo na stronie <a href="https://myaccount.google.com/permissions">uprawnień konta Google</a>. Po odłączeniu w aplikacji urządzenie usuwa token i pobrane wydarzenia. Żeby usunąć konto Ogarniacza razem z danymi na serwerze, napisz na adres powyżej.</p>
+<p>Dostęp do kalendarza odłączysz w ustawieniach aplikacji albo na stronie <a href="https://myaccount.google.com/permissions">uprawnień konta Google</a>. Po odłączeniu w aplikacji token przestaje działać, a Twoje urządzenia usuwają go razem z pobranymi wydarzeniami i listą wybranych kalendarzy. Wylogowanie z urządzenia usuwa z niego pobrane wydarzenia. Żeby usunąć konto Ogarniacza razem z danymi na serwerze, napisz na adres powyżej.</p>
 
 <h2>Zmiany</h2>
 <p>Gdy ta polityka się zmieni, zmieni się też data na górze tej strony.</p>
