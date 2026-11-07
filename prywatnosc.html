@@ -23,8 +23,9 @@
 
 <h2>Dane z Kalendarza Google</h2>
 <ul>
-<li><strong>Do czego jest dostęp:</strong> tylko do odczytu listy Twoich kalendarzy i ich wydarzeń (zakres <code>calendar.readonly</code>). Aplikacja niczego w kalendarzu nie tworzy, nie zmienia i nie usuwa.</li>
-<li><strong>Po co:</strong> żeby pokazać wydarzenia z kalendarzy, które wybierzesz, w planie dnia, tygodnia i miesiąca. Do niczego innego.</li>
+<li><strong>Do czego jest dostęp:</strong> do odczytu listy Twoich kalendarzy i ich wydarzeń (zakres <code>calendar.readonly</code>) oraz do wpisywania wydarzeń (zakres <code>calendar.events</code>). Ten zakres pozwala na więcej, ale aplikacja używa go tylko do tworzenia nowego wydarzenia na Twoją prośbę: niczego, co już jest w kalendarzu, nie zmienia i nie usuwa, a zadania same tam nie trafiają.</li>
+<li><strong>Po co:</strong> żeby pokazać wydarzenia z kalendarzy, które wybierzesz, w planie dnia, tygodnia i miesiąca, i żeby wpisać do kalendarza to, co sama wpiszesz i potwierdzisz przyciskiem „Wpisz”. Do niczego innego.</li>
+<li><strong>Co trafia do Google:</strong> tylko nazwa, dzień, godzina i czas trwania wydarzenia, które wpisujesz, do kalendarza, który wskażesz. Urządzenie wysyła je prosto do Google. Aplikacja nie zaprasza gości, więc nikt nie dostaje przez to wiadomości.</li>
 <li><strong>Gdzie trafiają:</strong> urządzenie pobiera wydarzenia prosto od Google i trzyma je u siebie. Wydarzenia nie trafiają na serwer Ogarniacza.</li>
 <li><strong>Token dostępu:</strong> kalendarz łączysz raz i działa na wszystkich urządzeniach Twojego konta. Dlatego token jest szyfrowany na urządzeniu kluczem, który mają tylko Twoje urządzenia (w pęku kluczy, Keychain). Tylko w tej zaszyfrowanej postaci jest zapisywany w danych aplikacji i przechodzi przez serwer Ogarniacza. Serwer nie ma klucza i nie może go odczytać.</li>
 <li><strong>Co się synchronizuje:</strong> zaszyfrowany token i lista kalendarzy, które wybierzesz, żeby wszystkie Twoje urządzenia pokazywały to samo. Lista też jest zaszyfrowana na urządzeniu, jak reszta danych.</li>
